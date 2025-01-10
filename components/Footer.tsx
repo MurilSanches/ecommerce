@@ -25,19 +25,19 @@ export default function Footer() {
           <h4 className="text-lg font-bold mb-4">Institucional</h4>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">Quem Somos</a>
+              <a href="/quem-somos" className="text-sm text-gray-400 hover:text-white">Quem Somos</a>
             </li>
             <li>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">Política de Trocas</a>
+              <a href="/politica-de-trocas" className="text-sm text-gray-400 hover:text-white">Política de Trocas</a>
             </li>
             <li>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">Política de Entregas</a>
+              <a href="/politica-de-entregas" className="text-sm text-gray-400 hover:text-white">Política de Entregas</a>
             </li>
             <li>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">Política de Privacidade</a>
+              <a href="/politica-de-privacidade" className="text-sm text-gray-400 hover:text-white">Política de Privacidade</a>
             </li>
             <li>
-              <a href="#" className="text-sm text-gray-400 hover:text-white">Termos e Condições</a>
+              <a href="/termos-e-condicoes" className="text-sm text-gray-400 hover:text-white">Termos e Condições</a>
             </li>
           </ul>
         </div>
@@ -84,18 +84,18 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://www.leoneclstore.com.br"
+                href="https://www.ecommerce.com.br"
                 className="text-sm text-gray-400 hover:text-white"
               >
-                www.leoneclstore.com.br
+                www.ecommerce.com.br
               </a>
             </li>
             <li>
               <a
-                href="mailto:kattiarodael@bol.com.br"
+                href="mailto:ecommerce@ecommerce.com.br"
                 className="text-sm text-gray-400 hover:text-white"
               >
-                kattiarodael@bol.com.br
+                ecommerce@ecommerce.com.br
               </a>
             </li>
           </ul>
@@ -103,7 +103,7 @@ export default function Footer() {
 
         {/* Redes Sociais */}
         <div className="flex flex-col items-center md:items-start">
-          <h4 className="text-lg font-bold mb-4">LEV♢NE</h4>
+          <h4 className="text-lg font-bold mb-4">Redes Sociais</h4>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-white">
               <Image
@@ -136,7 +136,7 @@ export default function Footer() {
       {/* Rodapé final */}
       <div className="bg-white py-4 mt-8 text-center text-sm text-gray-500">
         <p>
-          &copy; Copyright Leone Store - CNPJ 40.669.336/0001-66
+          &copy; Copyright Ecommerce - CNPJ 40.669.336/0001-66
         </p>
         
       </div>
