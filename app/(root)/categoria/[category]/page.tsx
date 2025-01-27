@@ -7,7 +7,7 @@ interface pageProps {
   params: { category: string };
 }
 
-const page = ({ params }: pageProps) => {
+const page = async ({ params }: pageProps) => {
   const category = categories.find((c) => c.id === params.category);
 
   return (

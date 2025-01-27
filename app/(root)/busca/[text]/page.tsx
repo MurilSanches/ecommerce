@@ -6,7 +6,7 @@ interface PageProps {
   params: { text: string };
 }
 
-const page = ({ params }: PageProps) => {
+const page = async ({ params }: PageProps) => {
   return (
     <div className="container mx-auto">
       <ProductList title={`Voce procurou por ${params.text}`} />
