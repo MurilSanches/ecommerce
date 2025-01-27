@@ -18,7 +18,9 @@ export default function Header() {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    router.push(`/busca/${(event.target as HTMLFormElement)[0].value}`);
+    router.push(
+      `/busca/${((event.target as HTMLFormElement)[0] as HTMLInputElement).value}`
+    );
   };
 
   return (
