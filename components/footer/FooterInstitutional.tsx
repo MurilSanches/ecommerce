@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const FooterInstitutional = () => {
   return (
@@ -6,44 +7,44 @@ const FooterInstitutional = () => {
       <h4 className="mb-4 text-lg font-bold">Institucional</h4>
       <ul className="space-y-2">
         <li>
-          <a
+          <Link
             href="/quem-somos"
             className="text-sm text-gray-400 hover:text-white"
           >
             Quem Somos
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/politica-de-trocas"
             className="text-sm text-gray-400 hover:text-white"
           >
             Política de Trocas
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/politica-de-entregas"
             className="text-sm text-gray-400 hover:text-white"
           >
             Política de Entregas
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/politica-de-privacidade"
             className="text-sm text-gray-400 hover:text-white"
           >
             Política de Privacidade
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/termos-e-condicoes"
             className="text-sm text-gray-400 hover:text-white"
           >
             Termos e Condições
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

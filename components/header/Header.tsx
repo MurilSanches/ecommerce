@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { categories } from "@/data/categories";
 import { BsBoxSeam } from "react-icons/bs";
@@ -35,14 +36,14 @@ export default function Header() {
           </button>
 
           {/* Logo */}
-          <a className="flex items-center" href="/">
+          <Link className="flex items-center" href="/">
             <Image
               src="/logo.png" // Substitua pelo caminho da logo
               alt="Levine Logo"
               width={100}
               height={80}
             />
-          </a>
+          </Link>
 
           {/* Barra de pesquisa */}
           <div className="mx-4 hidden w-full flex-grow md:flex">
@@ -76,13 +77,12 @@ export default function Header() {
         <nav className="hidden bg-white text-black shadow-md md:flex">
           <div className="container mx-auto flex items-center justify-center space-x-6 py-2">
             {categories.map((item, index) => (
-              <a
-                key={index}
+              <Link
                 href={`/categoria/${item.id}`}
                 className={`text-sm transition hover:text-gray-700 ${item.className}`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>

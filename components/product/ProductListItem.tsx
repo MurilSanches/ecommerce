@@ -1,13 +1,17 @@
-'use client'
+"use client";
 
-import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const ProductHome = () => {
   const [hovered, setHovered] = useState(false); // Estado para controlar o hover
 
   return (
-    <a href={`/produto/123/jordan`} className="bg-white shadow-md rounded-md flex flex-col items-center cursor-pointer">
+    <Link
+      href={`/produto/123/jordan`}
+      className="flex cursor-pointer flex-col items-center rounded-md bg-white shadow-md"
+    >
       <div
         onMouseEnter={() => setHovered(true)} // Quando o mouse entra na área da imagem
         onMouseLeave={() => setHovered(false)} // Quando o mouse sai da área da imagem
@@ -20,18 +24,20 @@ const ProductHome = () => {
           className="rounded-md transition-all duration-300" // Adiciona uma transição suave
         />
       </div>
-      <div className="flex flex-col w-full text-center justify-center p-4 gap-y-2">
-        <h3 className="text-gray-600 text-lg font-bold mt-2">Tênis XYZ</h3>
-        <p className="text-gray-600 mt-1 font-semibold">2x de R$ 149,90 sem juros</p>
-        <p className="text-gray-600 mt-1">R$ 299,90</p>
+      <div className="flex w-full flex-col justify-center gap-y-2 p-4 text-center">
+        <h3 className="mt-2 text-lg font-bold text-gray-600">Tênis XYZ</h3>
+        <p className="mt-1 font-semibold text-gray-600">
+          2x de R$ 149,90 sem juros
+        </p>
+        <p className="mt-1 text-gray-600">R$ 299,90</p>
         <button
-          className="w-full bg-gray-800 text-white rounded px-4 py-2"
+          className="w-full rounded bg-gray-800 px-4 py-2 text-white"
           type="button"
         >
           Comprar
         </button>
       </div>
-    </a>
+    </Link>
   );
 };
 

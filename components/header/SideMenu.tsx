@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { categories } from "@/data/categories";
 
 type SideMenuProps = {
@@ -23,13 +24,13 @@ export default function SideMenu({ isOpen, onClose }: SideMenuProps) {
 
         <nav className="mt-4">
           {categories.map((item, index) => (
-            <a
+            <Link
               key={index}
               href={`/categoria/${item.id}`}
               className={`block py-2 hover:text-gray-700 ${item.className}`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
