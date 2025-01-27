@@ -25,7 +25,7 @@ export default function SideMenu({ isOpen, onClose }: SideMenuProps) {
         <nav className="mt-4">
           {categories.map((item, index) => (
             <Link
-              key={index}
+              key={item.id}
               href={`/categoria/${item.id}`}
               className={`block py-2 hover:text-gray-700 ${item.className}`}
             >

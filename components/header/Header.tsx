@@ -78,6 +78,7 @@ export default function Header() {
           <div className="container mx-auto flex items-center justify-center space-x-6 py-2">
             {categories.map((item, index) => (
               <Link
+                key={item.id}
                 href={`/categoria/${item.id}`}
                 className={`text-sm transition hover:text-gray-700 ${item.className}`}
               >
